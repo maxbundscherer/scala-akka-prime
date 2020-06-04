@@ -11,6 +11,8 @@ object WorkerActor {
                                 replyTo: ActorRef[Request]
                                ) extends Request
 
+  private def isPrime(n: Int): Boolean = ! ((2 until n-1) exists (n % _ == 0))
+
   def apply(): Behavior[Request] = Behaviors.receive { (context, message) =>
 
     message match {
@@ -21,7 +23,7 @@ object WorkerActor {
 
         cmd.replyTo ! SupervisorActor.ProcessResultCmd(
           rangeSpec = cmd.rangeSpec,
-          primes = Vector(cmd.rangeSpec.from, cmd.rangeSpec.to) //TODO: Implement isPrime
+          primes = (cmd.rangeSpec.from to cmd.rangeSpec.to).filter(i => isPrime(i)).toVector
         )
 
     }

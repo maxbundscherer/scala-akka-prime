@@ -8,10 +8,10 @@ class ActorSystemService {
 
   private val actorSystem: ActorSystem[Request]  = ActorSystem(SupervisorActor(), "actorSystem")
 
-  def startJob(from: Int, to: Int, maxWorkers: Int): Unit = {
+  def startJob(to: Int, maxWorkers: Int): Unit = {
 
     actorSystem ! SupervisorActor.StartJobCmd(
-      rangeSpec = RangeSpec(0, 100),
+      to = to,
       maxWorkers = maxWorkers
     )
 

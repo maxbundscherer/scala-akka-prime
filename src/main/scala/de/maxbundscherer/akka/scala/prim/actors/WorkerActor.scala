@@ -17,7 +17,7 @@ object WorkerActor {
 
       case cmd: CalcRangeCmd =>
 
-        context.log.info(s"Should calc range ($cmd)")
+        context.log.debug(s"Should calc range (${cmd.rangeSpec})")
 
         cmd.replyTo ! SupervisorActor.ProcessResultCmd(
           rangeSpec = cmd.rangeSpec,

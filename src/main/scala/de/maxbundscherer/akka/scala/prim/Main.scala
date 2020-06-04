@@ -7,9 +7,8 @@ object Main extends App {
   val actorSystemService = new ActorSystemService()
 
   actorSystemService.startJob(
-    from = 0,
     to = 100,
-    maxWorkers = 1
+    maxWorkers = 2
   )
 
 }

@@ -7,7 +7,7 @@ object SupervisorActor {
 
   import de.maxbundscherer.akka.scala.prim.aggregates.PrimeAggregate._
 
-  final case class StartJobCmd(rangeSpec: RangeSpec,
+  final case class StartJobCmd(to: Int,
                                maxWorkers: Int) extends Request
 
   final case class ProcessResultCmd(rangeSpec: RangeSpec,
@@ -33,18 +33,24 @@ object SupervisorActor {
 
         context.log.info(s"Should start job ($cmd)")
 
-        //TODO: Parallel
-        val w1 = context.spawn( WorkerActor(), "worker1" )
-        val w2 = context.spawn( WorkerActor(), "worker2" )
+        if(cmd.to % cmd.maxWorkers != 0) throw new RuntimeException("Can't split range correctly")
 
-        val rangeSpec1 = RangeSpec(0, 100)
-        val rangeSpec2 = RangeSpec(101, 200)
+        val step: Int = cmd.to / cmd.maxWorkers
 
-        w1 ! WorkerActor.CalcRangeCmd(rangeSpec1, context.self)
-        w2 ! WorkerActor.CalcRangeCmd(rangeSpec2, context.self)
+        val subRanges: Seq[RangeSpec] = for (i <- 0 until cmd.maxWorkers) yield {
+          val from = i * step + 1
+          RangeSpec(from = from, to = from + step - 1)
+        }
+
+        context.log.debug(s"Got ${subRanges.size} subRanges (${subRanges.toVector.toString()})")
+
+        subRanges.foreach(r => {
+          val worker = context.spawn( WorkerActor(), s"worker-${r.from}-${r.to}")
+          worker ! WorkerActor.CalcRangeCmd(r, context.self)
+        })
 
         applyRunning(RunningState(
-          unprocessedRanges = Vector(rangeSpec1, rangeSpec2),
+          unprocessedRanges = subRanges.toVector,
           processedRanges = Map.empty,
           cmd = cmd
         ))
@@ -64,21 +70,16 @@ object SupervisorActor {
 
         val newState = state.copy(
           unprocessedRanges = state.unprocessedRanges.filter(i => i != cmd.rangeSpec),
-          processedRanges = state.processedRanges + (cmd.rangeSpec -> cmd.primes)
+          processedRanges   = state.processedRanges + (cmd.rangeSpec -> cmd.primes)
         )
 
         if(newState.unprocessedRanges.isEmpty) {
           applyFinished(FinishedState(
-            primes = state.processedRanges.values.toVector.flatten,
+            primes = newState.processedRanges.values.toVector.flatten,
             cmd = state.cmd
           ))
         }
-        else {
-
-          context.log.debug(s"Not finished yet (${newState.unprocessedRanges.size})")
-          applyRunning(newState)
-
-        }
+        else applyRunning(newState)
 
     }
 

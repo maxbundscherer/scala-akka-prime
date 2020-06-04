@@ -35,10 +35,16 @@ object SupervisorActor {
 
         //TODO: Parallel
         val w1 = context.spawn( WorkerActor(), "worker1" )
-        w1 ! WorkerActor.CalcRangeCmd(cmd.rangeSpec, context.self)
+        val w2 = context.spawn( WorkerActor(), "worker2" )
+
+        val rangeSpec1 = RangeSpec(0, 100)
+        val rangeSpec2 = RangeSpec(101, 200)
+
+        w1 ! WorkerActor.CalcRangeCmd(rangeSpec1, context.self)
+        w2 ! WorkerActor.CalcRangeCmd(rangeSpec2, context.self)
 
         applyRunning(RunningState(
-          unprocessedRanges = Vector(cmd.rangeSpec),
+          unprocessedRanges = Vector(rangeSpec1, rangeSpec2),
           processedRanges = Map.empty,
           cmd = cmd
         ))
@@ -67,7 +73,12 @@ object SupervisorActor {
             cmd = state.cmd
           ))
         }
-        else applyRunning(newState)
+        else {
+
+          context.log.debug(s"Not finished yet (${newState.unprocessedRanges.size})")
+          applyRunning(newState)
+
+        }
 
     }
 

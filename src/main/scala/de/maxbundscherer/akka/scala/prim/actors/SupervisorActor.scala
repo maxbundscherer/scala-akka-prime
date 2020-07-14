@@ -75,7 +75,7 @@ object SupervisorActor {
 
         if(newState.unprocessedRanges.isEmpty) {
           applyFinished(FinishedState(
-            primes = newState.processedRanges.values.toVector.flatten,
+            primes = newState.processedRanges.values.toVector.flatten.sorted,
             cmd = state.cmd
           ))
         }

@@ -1,7 +1,7 @@
 package de.maxbundscherer.akka.scala.prim.examples
 
 import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.{ActorRef, Behavior}
+import akka.actor.typed.Behavior
 import akka.actor.typed.ActorSystem
 
 object TestActor {

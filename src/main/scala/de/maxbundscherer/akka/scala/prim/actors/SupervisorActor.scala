@@ -1,24 +1,35 @@
 package de.maxbundscherer.akka.scala.prim.actors
 
-import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.{ActorRef, Behavior}
+import de.maxbundscherer.akka.scala.prim.utils.CSV
 
-object SupervisorActor {
+import akka.actor.typed.scaladsl.Behaviors
+import akka.actor.typed.Behavior
+
+object SupervisorActor extends CSV {
 
   import de.maxbundscherer.akka.scala.prim.aggregates.PrimeAggregate._
 
-  final case class StartJobCmd(to: Int,
-                               maxWorkers: Int) extends Request
+  final case class StartJobCmd(
+                                to: Int,
+                                maxWorkers: Int,
+                                resultFilename: String
+                                ) extends Request
 
   final case class ProcessResultCmd(rangeSpec: RangeSpec,
                                     primes: Vector[Int]) extends Request
 
-  private final case class RunningState(unprocessedRanges: Vector[RangeSpec],
-                                  processedRanges: Map[RangeSpec, Vector[Int]],
-                                  cmd: StartJobCmd) extends State
+  private final case class RunningState(
+                                        unprocessedRanges: Vector[RangeSpec],
+                                        processedRanges: Map[RangeSpec, Vector[Int]],
+                                        startTime: Long,
+                                        cmd: StartJobCmd) extends State
 
-  private final case class FinishedState(primes: Vector[Int],
-                                  cmd: StartJobCmd) extends State
+  private final case class FinishedState(
+                                          primes: Vector[Int],
+                                          startTime: Long,
+                                          endTime: Long,
+                                          cmd: StartJobCmd
+                                          ) extends State
 
   def apply(): Behavior[Request] = applyIdle()
 
@@ -52,6 +63,7 @@ object SupervisorActor {
         applyRunning(RunningState(
           unprocessedRanges = subRanges.toVector,
           processedRanges = Map.empty,
+          startTime = System.nanoTime(),
           cmd = cmd
         ))
 
@@ -76,6 +88,8 @@ object SupervisorActor {
         if(newState.unprocessedRanges.isEmpty) {
           applyFinished(FinishedState(
             primes = newState.processedRanges.values.toVector.flatten.sorted,
+            startTime = newState.startTime,
+            endTime = System.nanoTime(),
             cmd = state.cmd
           ))
         }
@@ -92,6 +106,16 @@ object SupervisorActor {
 
     context.log.info(s"Finished! ($state)")
 
+    CSVWriter.writeToCSV(
+      to = state.cmd.to,
+      maxWorkers = state.cmd.maxWorkers,
+      time = state.endTime - state.startTime,
+      primeCounter = state.primes.size,
+      filename = state.cmd.resultFilename
+    )
+
+    //Terminate actor system (future binding on whenTerminated)
+    context.system.terminate()
     Behaviors.same
   }
 

@@ -110,7 +110,7 @@ object SupervisorActor extends CSV {
    */
   private def applyFinished(state: FinishedState): Behavior[Request] = Behaviors.setup { context =>
 
-    context.log.info(s"Start run (${state.startRunCmd})")
+    context.log.info(s"Finished run (${state.startRunCmd})")
 
     CSVWriter.writeResultsToCSV(
       to          = state.startRunCmd.to,

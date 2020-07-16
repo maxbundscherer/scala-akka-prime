@@ -12,5 +12,5 @@ Author: [Maximilian Bundscherer](https://bundscherer-online.de)
 
 ## Let's get started
 
-- See params in config-file ``./src/main/resources/application.conf``
+- See config in main
 - Run ``sbt run``

@@ -8,26 +8,30 @@ object WorkerActor {
   import akka.actor.typed.scaladsl.Behaviors
   import akka.actor.typed.{ActorRef, Behavior}
 
-  final case class CalcRangeCmd(rangeSpec: RangeSpec,
-                                replyTo: ActorRef[Request]
-                               ) extends Request
+  final case class ProcessRangeCmd(
+                                    range: RangeSpec,
+                                    replyTo: ActorRef[Request]
+                                  ) extends Request
 
+  /**
+   * State Idle
+   */
   def apply(): Behavior[Request] = Behaviors.receive { (context, message) =>
 
     message match {
 
-      case cmd: CalcRangeCmd =>
+      case cmd: ProcessRangeCmd =>
 
-        context.log.debug(s"Should calc range (${cmd.rangeSpec})")
+        context.log.debug(s"Process range (${cmd.range})")
 
-        cmd.replyTo ! SupervisorActor.ProcessResultCmd(
-          rangeSpec = cmd.rangeSpec,
-          primes = (cmd.rangeSpec.from to cmd.rangeSpec.to).filter(i => Calculator.isPrime(i)).toVector
+        cmd.replyTo ! SupervisorActor.ProcessRangeResultsCmd(
+          range   = cmd.range,
+          results = (cmd.range.from to cmd.range.to).filter(i => Calculator.isPrime(i)).toVector
         )
 
     }
 
-    Behaviors.same
+    Behaviors.stopped
   }
 
 }

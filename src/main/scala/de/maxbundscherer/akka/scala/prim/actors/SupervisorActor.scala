@@ -9,26 +9,29 @@ object SupervisorActor extends CSV {
   import akka.actor.typed.scaladsl.Behaviors
   import akka.actor.typed.Behavior
 
-  final case class StartJobCmd(
+  final case class StartRunCmd(
                                 to: Int,
                                 maxWorkers: Int,
                                 resultFilename: String
                                 ) extends Request
 
-  final case class ProcessResultCmd(rangeSpec: RangeSpec,
-                                    primes: Vector[Int]) extends Request
+  final case class ProcessRangeResultsCmd(
+                                            range: RangeSpec,
+                                            results: Vector[Int]
+                                         ) extends Request
 
-  private final case class RunningState(
+  private final case class ProcessingState(
                                         unprocessedRanges: Vector[RangeSpec],
                                         processedRanges: Map[RangeSpec, Vector[Int]],
                                         startTime: Long,
-                                        cmd: StartJobCmd) extends State
+                                        startRunCmd: StartRunCmd
+                                          ) extends State
 
   private final case class FinishedState(
-                                          primes: Vector[Int],
+                                          results: Vector[Int],
                                           startTime: Long,
                                           endTime: Long,
-                                          cmd: StartJobCmd
+                                          startRunCmd: StartRunCmd
                                           ) extends State
 
   def apply(): Behavior[Request] = applyIdle()
@@ -40,12 +43,14 @@ object SupervisorActor extends CSV {
 
     message match {
 
-      case cmd: StartJobCmd =>
+      case cmd: StartRunCmd =>
 
-        context.log.info(s"Should start job ($cmd)")
+        context.log.info(s"Start run ($cmd)")
 
+        //Check if can build subRanges correctly
         if(cmd.to % cmd.maxWorkers != 0) throw new RuntimeException("Can't split range correctly")
 
+        //Calc subRanges
         val step: Int = cmd.to / cmd.maxWorkers
 
         val subRanges: Seq[RangeSpec] = for (i <- 0 until cmd.maxWorkers) yield {
@@ -53,18 +58,19 @@ object SupervisorActor extends CSV {
           RangeSpec(from = from, to = from + step - 1)
         }
 
-        context.log.debug(s"Got ${subRanges.size} subRanges (${subRanges.toVector.toString()})")
+        context.log.debug(s"Got ${subRanges.size} subRanges")
 
-        subRanges.foreach(r => {
-          val worker = context.spawn( WorkerActor(), s"worker-${r.from}-${r.to}")
-          worker ! WorkerActor.CalcRangeCmd(r, context.self)
+        //Start for each subRange a worker
+        subRanges.foreach(subRange => {
+          val worker = context.spawn(WorkerActor(), name = s"worker-${subRange.from}-${subRange.to}")
+          worker ! WorkerActor.ProcessRangeCmd(range = subRange, replyTo = context.self)
         })
 
-        applyRunning(RunningState(
+        applyProcessing(ProcessingState(
           unprocessedRanges = subRanges.toVector,
           processedRanges = Map.empty,
           startTime = System.nanoTime(),
-          cmd = cmd
+          startRunCmd = cmd
         ))
 
     }
@@ -72,28 +78,28 @@ object SupervisorActor extends CSV {
   }
 
   /**
-   * State Running
+   * State Processing
    */
-  private def applyRunning(state: RunningState): Behavior[Request] = Behaviors.receive { (context, message) =>
+  private def applyProcessing(state: ProcessingState): Behavior[Request] = Behaviors.receive { (context, message) =>
 
     message match {
 
-      case cmd: ProcessResultCmd =>
+      case cmd: ProcessRangeResultsCmd =>
 
         val newState = state.copy(
-          unprocessedRanges = state.unprocessedRanges.filter(i => i != cmd.rangeSpec),
-          processedRanges   = state.processedRanges + (cmd.rangeSpec -> cmd.primes)
+          unprocessedRanges = state.unprocessedRanges.filter(i => i != cmd.range),
+          processedRanges   = state.processedRanges + (cmd.range -> cmd.results)
         )
 
         if(newState.unprocessedRanges.isEmpty) {
           applyFinished(FinishedState(
-            primes = newState.processedRanges.values.toVector.flatten.sorted,
+            results = newState.processedRanges.values.toVector.flatten.sorted,
             startTime = newState.startTime,
             endTime = System.nanoTime(),
-            cmd = state.cmd
+            startRunCmd = state.startRunCmd
           ))
         }
-        else applyRunning(newState)
+        else applyProcessing(newState)
 
     }
 
@@ -104,20 +110,20 @@ object SupervisorActor extends CSV {
    */
   private def applyFinished(state: FinishedState): Behavior[Request] = Behaviors.setup { context =>
 
-    context.log.info(s"Finished! ($state)")
+    context.log.info(s"Start run (${state.startRunCmd})")
 
-    CSVWriter.writeToCSV(
-      to = state.cmd.to,
-      maxWorkers = state.cmd.maxWorkers,
-      time = state.endTime - state.startTime,
-      primeSize = state.primes.size,
-      startTime = state.startTime,
-      filename = state.cmd.resultFilename
+    CSVWriter.writeResultsToCSV(
+      to          = state.startRunCmd.to,
+      maxWorkers  = state.startRunCmd.maxWorkers,
+      time        = state.endTime - state.startTime,
+      resultsSize = state.results.size,
+      startTime   = state.startTime,
+      filename    = state.startRunCmd.resultFilename
     )
 
     //Terminate actor system (future binding on whenTerminated)
     context.system.terminate()
-    Behaviors.same
+    Behaviors.stopped
   }
 
 }

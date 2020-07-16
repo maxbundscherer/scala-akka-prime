@@ -10,17 +10,21 @@ class ActorSystemService {
   import scala.concurrent.Future
 
   /**
-   * Start Job
+   * Start Run
    * @param to e.g. 100
    * @param maxWorkers e.g. 2
    * @param resultFilename e.g. result.csv
    * @return Future (binding on whenTerminated)
    */
-  def startJob(to: Int, maxWorkers: Int, resultFilename: String): Future[Done] = {
+  def startRun(
+                to: Int,
+                maxWorkers: Int,
+                resultFilename: String
+              ): Future[Done] = {
 
     val actorSystem: ActorSystem[Request]  = ActorSystem(SupervisorActor(), "actorSystem")
 
-    actorSystem ! SupervisorActor.StartJobCmd(
+    actorSystem ! SupervisorActor.StartRunCmd(
       to = to,
       maxWorkers = maxWorkers,
       resultFilename = resultFilename

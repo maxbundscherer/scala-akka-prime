@@ -1,6 +1,6 @@
 package de.maxbundscherer.akka.scala.prim.utils
 
-object RunnerController {
+object JobController {
 
   import de.maxbundscherer.akka.scala.prim.services.ActorSystemService
 
@@ -10,32 +10,33 @@ object RunnerController {
   import akka.Done
 
   /**
-   * Do run
+   * Start Job
    * @param actorSystemService ActorSystemService
-   * @param maxRepeats Number of repeats per maxWorker
+   * @param maxWorkersPerRun Number of maxWorkers per Run
+   * @param repeatRun Repeats Run
    * @param to e.g. 100
-   * @param maxWorkers e.g. 5
    * @param resultFilename e.g. result.csv
    */
-  def doRun(
+  def startJob(
              actorSystemService: ActorSystemService,
-             maxRepeats: Int,
+             maxWorkersPerRun: Vector[Int],
+             repeatRun: Int,
              to: Int,
-             maxWorkers: Vector[Int],
              resultFilename: String
            ): Unit = {
 
-    val maxWorkersStack: mutable.Stack[Int] = new mutable.Stack()
-    maxWorkers.reverse.foreach(i => maxWorkersStack.push(i))
+    //Build stack
+    val maxWorkersPerRunStack: mutable.Stack[Int] = new mutable.Stack()
+    maxWorkersPerRun.reverse.foreach(i => maxWorkersPerRunStack.push(i))
 
-    while(maxWorkersStack.nonEmpty) {
+    while(maxWorkersPerRunStack.nonEmpty) {
 
-      val currentMaxWorker: Int = maxWorkersStack.pop()
+      val currentMaxWorker: Int = maxWorkersPerRunStack.pop()
       var iRepeat: Int          = 0
 
-      while(iRepeat < maxRepeats) {
+      while(iRepeat < repeatRun) {
 
-        val future: Future[Done] = actorSystemService.startJob(
+        val future: Future[Done] = actorSystemService.startRun(
           to = to,
           maxWorkers = currentMaxWorker,
           resultFilename = resultFilename

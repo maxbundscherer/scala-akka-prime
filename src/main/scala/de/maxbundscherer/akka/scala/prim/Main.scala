@@ -1,14 +1,25 @@
 package de.maxbundscherer.akka.scala.prim
 
-import de.maxbundscherer.akka.scala.prim.services.ActorSystemService
-
 object Main extends App {
 
-  val actorSystemService = new ActorSystemService()
+  import de.maxbundscherer.akka.scala.prim.utils.Calculator
+  import de.maxbundscherer.akka.scala.prim.services.ActorSystemService
+  import de.maxbundscherer.akka.scala.prim.utils.RunnerController
 
-  actorSystemService.startJob(
-    to = 100,
-    maxWorkers = 2
+  private val actorSystemService = new ActorSystemService()
+
+  private val maxRepeats: Int         = 5
+  private val resultFilename: String  = "result.csv"
+  private val maxWorkers: Vector[Int] = Vector(1, 2, 3, 4, 5, 6, 7, 8)
+
+  private val to = Calculator.calcTo(maxWorkers) * 10
+
+  RunnerController.doRun(
+    actorSystemService = actorSystemService,
+    maxRepeats = maxRepeats,
+    to = to,
+    maxWorkers = maxWorkers,
+    resultFilename = resultFilename
   )
 
 }

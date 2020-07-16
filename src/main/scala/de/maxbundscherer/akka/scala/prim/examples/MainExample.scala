@@ -1,10 +1,9 @@
 package de.maxbundscherer.akka.scala.prim.examples
 
-import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.Behavior
-import akka.actor.typed.ActorSystem
-
 object TestActor {
+
+  import akka.actor.typed.scaladsl.Behaviors
+  import akka.actor.typed.Behavior
 
   //Declare request wrapper and internal state
   sealed trait Request
@@ -33,6 +32,8 @@ object TestActor {
 }
 
 object MainExample extends App {
+
+  import akka.actor.typed.ActorSystem
 
   //Init actor system and actor
   private val actorSystem: ActorSystem[TestActor.Request]  = ActorSystem(TestActor(), "actorSystem")

@@ -2,12 +2,12 @@ package de.maxbundscherer.akka.scala.prim.actors
 
 import de.maxbundscherer.akka.scala.prim.utils.CSV
 
-import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.Behavior
-
 object SupervisorActor extends CSV {
 
   import de.maxbundscherer.akka.scala.prim.aggregates.PrimeAggregate._
+
+  import akka.actor.typed.scaladsl.Behaviors
+  import akka.actor.typed.Behavior
 
   final case class StartJobCmd(
                                 to: Int,
@@ -110,7 +110,8 @@ object SupervisorActor extends CSV {
       to = state.cmd.to,
       maxWorkers = state.cmd.maxWorkers,
       time = state.endTime - state.startTime,
-      primeCounter = state.primes.size,
+      primeSize = state.primes.size,
+      startTime = state.startTime,
       filename = state.cmd.resultFilename
     )
 

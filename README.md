@@ -1,6 +1,6 @@
 # Scala Akka Prime
 
-**Simple prime calculator (written in scala, based on akka)**
+**Simple prime calculator (written in scala, based on akka) to benchmark performance on different number of workers.**
 
 ![](./docImg/logos.png)
 
@@ -10,7 +10,12 @@ Tested on ``macOs`` with ``openjdk64-13``
 
 Author: [Maximilian Bundscherer](https://bundscherer-online.de)
 
+## Sample report
+
+tbd
+
 ## Let's get started
 
 - See config in main
 - Run ``sbt run``
+- See results in ``./results.csv``

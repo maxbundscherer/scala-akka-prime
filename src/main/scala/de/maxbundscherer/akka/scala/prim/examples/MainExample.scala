@@ -31,7 +31,8 @@ object TestActor {
 
 }
 
-object MainExample extends App {
+//Add 'extends App' to object 'MainExample' to run mainExample
+object MainExample {
 
   import akka.actor.typed.ActorSystem
 

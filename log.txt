@@ -1,0 +1,248 @@
+[info] welcome to sbt 1.3.12 (Private Build Java 13.0.3)
+[info] loading project definition from /home/ubuntu/scala-akka-prime/project
+[info] loading settings for project scala-akka-prime from build.sbt ...
+[info] set current project to scala-akka-prime (in build file:/home/ubuntu/scala-akka-prime/)
+[info] Compiling 1 Scala source to /home/ubuntu/scala-akka-prime/target/scala-2.13/classes ...
+[info] Done compiling.
+[info] running de.maxbundscherer.akka.scala.prim.Main 
+[2020-07-17 08:21:19,681] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:21:19,706] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:26:10,552] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:26:10,604] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:26:10,613] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:31:02,002] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:31:02,024] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:31:02,032] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:35:40,471] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:35:40,500] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:35:40,509] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:40:18,922] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:40:18,941] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:40:18,947] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:44:57,368] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,1,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:44:57,399] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:44:57,416] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:48:22,138] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:48:22,164] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:48:22,170] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:51:46,888] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:51:46,911] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:51:46,917] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:55:11,651] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:55:11,668] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:55:11,673] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:58:36,417] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 08:58:36,453] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 08:58:36,459] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:02:01,237] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,2,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:02:01,269] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:02:01,276] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:04:32,008] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:04:32,040] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:04:32,046] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:07:02,768] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:07:02,785] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:07:02,791] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:09:33,499] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:09:33,524] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:09:33,529] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:12:04,235] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:12:04,252] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:12:04,258] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:14:34,980] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,3,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:14:35,008] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:14:35,016] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:16:33,450] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:16:33,475] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:16:33,486] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:18:31,997] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:18:32,021] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:18:32,031] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:20:30,445] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:20:30,462] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:20:30,472] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:22:28,886] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:22:28,904] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:22:28,910] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:24:27,311] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,4,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:24:27,327] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:24:27,333] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:26:07,835] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:26:07,856] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:26:07,861] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:27:48,402] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:27:48,430] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:27:48,436] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:29:28,977] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:29:28,999] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:29:29,005] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:31:09,982] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:31:10,002] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:31:10,006] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:32:50,869] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,5,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:32:50,885] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:32:50,890] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:34:21,800] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:34:21,817] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:34:21,822] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:35:52,896] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:35:52,910] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:35:52,915] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:37:22,942] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:37:22,961] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:37:22,966] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:38:54,117] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:38:54,137] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:38:54,141] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:40:24,087] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,6,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:40:24,103] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:40:24,108] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:41:51,315] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:41:51,339] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:41:51,346] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:43:17,326] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:43:17,353] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:43:17,358] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:44:42,361] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:44:42,388] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:44:42,392] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:46:07,046] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:46:07,064] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:46:07,070] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:47:32,429] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,7,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:47:32,446] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:47:32,451] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:48:54,906] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:48:54,922] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:48:54,926] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:50:16,836] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:50:16,854] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:50:16,859] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:51:39,107] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:51:39,127] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:51:39,137] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:53:02,608] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:53:02,620] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:53:02,624] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:54:24,496] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,8,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:54:24,515] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:54:24,520] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:55:47,654] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:55:47,673] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:55:47,678] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:57:10,767] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:57:10,785] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:57:10,790] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:58:33,685] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:58:33,710] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:58:33,714] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:59:57,197] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 09:59:57,213] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 09:59:57,218] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:01:19,065] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,9,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:01:19,080] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:01:19,085] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:02:43,878] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:02:43,895] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:02:43,899] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:04:08,462] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:04:08,475] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:04:08,479] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:05:33,347] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:05:33,368] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:05:33,372] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:07:18,723] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:07:18,787] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:07:18,795] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:10:54,603] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,10,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:10:54,622] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:10:54,626] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:15:26,891] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:15:26,907] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:15:26,911] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:18:34,584] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:18:34,638] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:18:34,643] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:21:16,856] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:21:16,869] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:21:16,873] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:25:40,426] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:25:40,441] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:25:40,450] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:29:36,303] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,11,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:29:36,355] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:29:36,359] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:32:15,440] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:32:15,529] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:32:15,534] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:35:51,763] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:35:51,780] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:35:51,784] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:40:22,888] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:40:22,905] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:40:22,909] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:43:34,038] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:43:34,228] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:43:34,232] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:46:15,791] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,12,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:46:15,821] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:46:15,842] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:50:37,010] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:50:37,024] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:50:37,029] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:54:20,764] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:54:20,900] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:54:20,905] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:57:00,078] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 10:57:00,105] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 10:57:00,116] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:00:46,969] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:00:46,987] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:00:46,991] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:05:04,901] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,13,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:05:04,967] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:05:04,972] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:07:43,969] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:07:44,006] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:07:44,010] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:10:55,773] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:10:55,790] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:10:55,795] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:15:30,139] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:15:30,173] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:15:30,177] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:19:06,887] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:19:06,920] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:19:06,924] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:21:59,591] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,14,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:21:59,633] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:21:59,637] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:25:44,395] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:25:44,412] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:25:44,416] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:30:10,528] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:30:10,556] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:30:10,560] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:32:55,231] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:32:55,284] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:32:55,297] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:35:55,700] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:35:55,732] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:35:55,736] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:40:28,515] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,15,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:40:28,532] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:40:28,536] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:43:58,966] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:43:59,008] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:43:59,013] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:46:37,898] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:46:37,926] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:46:37,937] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:50:39,384] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:50:39,400] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:50:39,404] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:54:48,070] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:54:48,118] [INFO] [akka.event.slf4j.Slf4jLogger] - Slf4jLogger started {}
+[2020-07-17 11:54:48,122] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Start run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[2020-07-17 11:57:26,974] [INFO] [de.maxbundscherer.akka.scala.prim.actors.SupervisorActor$] - Finished run (StartRunCmd(720720,16,results.csv)) {akkaAddress=akka://actorSystem, akkaSource=akka://actorSystem/user, sourceActorSystem=actorSystem}
+[success] Total time: 12972 s (03:36:12), completed Jul 17, 2020, 11:57:27 AM

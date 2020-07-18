@@ -1,10 +1,10 @@
-# Scala Akka Prime
+# Scala Akka Prime SpeedUp
 
-**Simple prime calculator (written in scala, based on akka) to benchmark performance on different number of workers.**
+**Simple prime calculator (written in scala, based on akka) to benchmark speedUp on different numbers of workers.**
 
 ![](./docImg/logos.png)
 
-Tested on ``macOs`` with ``openjdk64-13``
+Tested on ``macOs`` and ``Ubuntu Server 20.04 LTS`` with ``openjdk64-13``
 
 [![shields.io](http://img.shields.io/badge/license-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 

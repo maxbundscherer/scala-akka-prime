@@ -23,7 +23,7 @@ object SupervisorActor {
 
       case _: TriggerRunCmd =>
 
-        context.log.info(s"Start run with initial state (${state.value})")
+        context.log.info(s"Start run with initial $state")
 
         val w1 = context.spawn(WorkerActor(), name = s"worker-1")
         val w2 = context.spawn(WorkerActor(), name = s"worker-2")
@@ -35,8 +35,12 @@ object SupervisorActor {
 
       case cmd: ProcessNewValueCmd =>
 
-        context.log.info(s"Old value (${state.value}) from State / New value (${cmd.value}) from workerActor")
-        applyIdle(state.copy(value = cmd.value))
+        val oldState = state
+        val newState = oldState.copy(value = cmd.value)
+
+        context.log.info(s"OldState $state / NewState $state")
+
+        applyIdle(newState)
 
     }
 

@@ -1,6 +1,6 @@
 # Scala Akka Prime SpeedUp
 
-**Simple prime calculator (written in scala, based on akka) to benchmark speedUp on different numbers of workers.**
+**Simple prime calculator (written in scala, based on akka) to benchmark speedUp on different amount of workers.**
 
 ![](./docImg/logos.png)
 
